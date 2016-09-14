@@ -1,0 +1,720 @@
+/*******
+Virginia Farm Bureau Advantage 
+Style Guide Styles 
+Project Wagon Wheel 
+Unity Release 5.0
+*******/
+
+
+
+
+/******
+	Font Styles
+*******/
+body, h1, h2, 
+h3, h4, h5, .hero-text {
+	font-family: 'Lato', sans-serif; 
+}
+
+html,
+body {
+	font-size:16px;
+}
+
+.hero-text {
+	font-size: 3.157em; 
+	font-weight: 600; 
+	color: #8a2432;
+}
+
+.heavy {
+	font-weight: 900;
+}
+
+h1 {
+	font-size: 2.369em;
+	font-weight: 600; 
+	color: #8a2432;
+
+}
+
+h2 {
+	font-size: 1.777em;
+	font-weight: 400;
+}
+
+h3 {
+	font-size: 1.333em;
+	font-weight: 400;
+	color: #799c4b;
+}
+
+.lead {
+	font-size: 1.333em;
+	font-weight: 400;
+	color: #333333;
+}
+
+h4 {
+	font-size: 1.333em;
+	font-weight: 400;
+}
+
+.detail {
+	font-size: .75em;
+}
+
+/***
+    
+Spacing Utility Classes 
+        
+***/
+.center-vertical {
+      display: flex;
+      flex-wrap: wrap; 
+      align-items: center;
+      justify-content: center; 
+}
+
+.margin-xs {
+      margin-top: 10px;
+      margin-bottom: 10px; 
+}
+
+.margin-sm {
+      margin-top: 20px;
+      margin-bottom: 20px;
+}
+
+.margin-md {
+      margin-top: 40px;
+      margin-bottom: 40px;
+}
+
+.margin-lg {
+      margin-top: 80px;
+      margin-bottom: 80px;
+}
+
+/****
+
+Color Utility Classes
+
+***/
+		.vfb-color-primary {
+			color:#8a2432 ;
+			} 
+		.vfb-color-info {
+			color:#92b7bc;
+		}	
+		.vfb-color-active {
+			color :#ffc72a;
+		}
+		.vfb-color-secondary {
+			color:#799c4b;
+		}
+		.vfb-color-default { 
+			color:#8d827a;
+		}
+		.vfb-color-dark-grey {
+			color: #6E655E;
+		}	
+		.vfb-color-body-text {
+			color: #333333;
+		}	
+		.vfb-color-off-white {
+			color: #e4e4e4;
+		}	
+		.vfb-color-cream { 
+			color: #cfdfb9; 
+		}	
+		.vfb-color-background { 
+			color: #ffffff;
+		}	
+		.vfb-color-footer {
+		 color: #cccccc;
+		}
+
+		/**
+		Background Classes 
+		**/
+
+		.vfb-bg-primary {
+			background-color:#8a2432 ;
+			border-color: #8a2432 ;
+			} 
+		.vfb-bg-info {
+			background-color:#92b7bc;
+			border-color:#92b7bc;
+		}	
+		.vfb-bg-active {
+			background-color:#ffc72a;
+			border-color:#ffc72a;
+		}
+		.vfb-bg-secondary {
+			background-color:#799c4b;
+			border-color:#799c4b;
+		}
+		.vfb-bg-default { 
+			background-color:#8d827a;
+			border-color:#8d827a;
+		}
+		.vfb-bg-dark-grey {
+			background-color: #6E655E;
+			border-color: #6E655E;
+		}	
+		.vfb-bg-body-text {
+			background-color: #333333;
+			border-color: #333333;
+		}	
+		.vfb-bg-off-white {
+			background-color: #e4e4e4;
+			border-color: #e4e4e4;
+		}	
+		.vfb-bg-cream { 
+			background-color: #cfdfb9;
+			border-color: #cfdfb9; 
+		}	
+		.vfb-bg-background { 
+			background-color: #ffffff;
+			border-color: #ffffff;
+		}	
+		.vfb-bg-footer {
+		 	background-color: #cccccc;
+		 	border-color: #cccccc;
+		}
+
+
+/*****
+	Validation Colors 
+*****/		
+
+.vfb-alert-error {
+	background-color: #ff3333;
+	color: #ffffff;
+}
+
+.vfb-alert-warning {
+	background-color: #ffcc00;
+	color: #333333;
+}
+
+.vfb-alert-success {
+	background-color: #339900;
+	color: #ffffff;
+}
+
+.vfb-alert-info {
+	background-color: #06d1dc;
+	color: #ffffff;
+}
+
+
+/*********
+
+Button Styles
+
+**********/
+
+/* Override for BS defaults */
+
+a.btn,
+a.btn:hover, 
+a.btn:active, 
+div.btn {
+	color: #ffffff;
+}
+
+.btn {
+	border-radius: 4px;
+}
+
+.button-lg {
+	height: 55px;
+	min-width: 225px;
+	font-weight: 400; 
+	font-size: 22px;
+	color: #ffffff;
+}
+
+a.button-lg,
+div.button-lg {
+	padding-top: 11px;
+}
+
+.button-sm {
+	height: 40px;
+	min-width: 150px;
+	font-weight: 400; 
+	font-size: 16px;
+	color: #ffffff; 
+
+}
+
+.button-primary {
+	background-color: #8a2434;
+}
+
+.button-secondary {
+	background-color: #789c48;
+}
+
+.button-default {
+	background-color: #8d827a;
+}
+
+/* Active and Hover States */
+
+.btn:active{
+	transform: translate(1px,1px);
+}
+
+.button-primary:hover,
+.button-secondary:hover,  
+.button-default:hover {
+	color: #ffffff;
+} 
+
+.button-primary:hover,
+.button-primary:active, 
+.button-primary:focus 
+ {
+	background-color: #651520;
+}
+
+.button-secondary:hover,
+.button-secondary:active,
+.button-secondary:focus 
+ {
+	background-color: #5e7b38;
+} 
+
+.button-default:hover,
+.button-default:active, 
+.button-default:focus 
+ {
+	background-color: #6e655e;
+}
+
+/*****
+	Button and Input Groups Styles
+*****/
+
+@media (max-width: 475px){
+    .vfb-form-block .form-group {
+        display: flex;
+        -ms-flex-direction: column-reverse;
+        -webkit-flex-direction: column-reverse;
+        flex-direction: column-reverse;
+    }
+
+    .vfb-form-block .form-group .btn {
+        width: 100%;
+    }
+}
+
+
+/********
+
+CTA Styles 
+
+*******/
+div[class*="vfb-cta-"] input[type="text"] {
+
+	height: 47.5px; 
+	max-width: 225px;
+
+}
+
+
+/*
+	CTA Brief 
+*/
+
+.vfb-cta-brief {
+	min-height: 100px;
+	padding-top: 25px;
+	text-align: center;
+}
+
+.vfb-cta-brief h2 {
+	margin-top: 10px;
+}
+.vfb-cta-brief .btn {
+	margin-top: 5px;
+}
+
+/* Group everything closer to H2*/
+.vfb-cta-brief .button-sm, 
+.vfb-cta-brief input {
+	margin-left: -20px;
+}
+
+/* Special stylings for small width */
+
+@media (max-width: 768px){
+	
+	.vfb-cta-brief .button-sm, 
+	.vfb-cta-brief input, 
+	.vfb-cta-brief h2 {
+		vertical-align: middle;
+		margin-bottom: 10px;
+	}
+
+}
+
+/*
+	CTA Verbose
+*/
+
+.vfb-cta-verbose {
+	min-height: 300px;
+	padding-top: 25px;
+}
+
+.vfb-cta-verbose h2 {
+	margin-top: 0px;
+}
+
+/* Special stylings for small width */
+
+@media (max-width: 768px){
+	
+	.vfb-cta-verbose div, 
+	.vfb-cta-verbose input, 
+	.vfb-cta-verbose h2,
+	.vfb-cta-verbose p, 
+	.vfb-cta-verbose img {
+		text-align: center;
+		margin:auto;
+	}
+
+	.vfb-cta-verbose p, 
+	.vfb-cta.verbose img.img-responsive {
+		margin-bottom: 15px;
+	}
+
+	.vfb-cta-verbose h2 {
+		margin-top: 15px;
+	}
+
+}
+
+/**
+Panel Styles 
+**/
+
+.vfb-panel {
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	box-shadow: 2px 2px 3px #8d827a;
+}
+
+.vfb-panel .panel-body {
+	padding-left: 20.5px;
+}
+
+.vfb-panel h2 {
+	margin-top: 2.5px;
+	margin-bottom: 12.5px;
+}
+.vfb-panel p {
+	margin-bottom: 20.5px;
+}
+
+.vfb-panel .btn {
+	margin-bottom: 7.5px;
+}
+
+.vfb-panel a[role=button] {
+	text-decoration: none;
+
+}
+
+.vfb-panel a[role=button],
+.vfb-panel a[role=button]:hover, 
+.vfb-panel a[role=button]:focus, 
+.vfb-panel a[role=button]:active {
+	color: inherit;
+	text-decoration:none;
+}
+
+
+/* Eliminate default boxshadow on accordian panel-groups*/
+.panel-group .vfb-panel {
+    -moz-box-shadow: 0px 0px 0px transparent;
+    -webkit-box-shadow: 0px 0px 0px transparent;
+    box-shadow: 0px 0px 0px transparent;
+} 
+
+
+/********
+Toggle Radio Buttons
+*********/
+.vfb-toggle-btn {
+	background-color: #8d827a;
+}
+
+.vfb-toggle-btn:hover {
+	background-color: #6e655e;
+	color: #ffffff;
+}
+
+input.vfb-hidden-tick:checked + label.vfb-toggle-btn {
+    background-color: #8a2432;
+    color: #ffc72a;
+}
+
+input.vfb-hidden-tick:checked + label.vfb-toggle-btn:hover {
+    background-color: #651520;
+    color: #ffc72a;
+}
+
+
+
+/***
+Checkbox and Radio Style 
+***/
+
+
+/* Set up all of the label elements inside of .vfb-horizontal to display flex  */
+
+.vfb-horizontal {
+    /*margin: 0 10px 0 0;*/
+ 		display: flex;
+        -ms-flex-direction: row;
+        -webkit-flex-direction: row;
+        flex-direction: row;
+        -ms-flex-wrap: wrap;
+        -webkit-flex-wrap: wrap;
+        flex-wrap: wrap;
+        justify-content: space-between;
+}
+
+.vfbStyleHidden {
+    display: none;
+}
+
+.vfb-horizontal label.vfb-tick {
+    margin-right: 5px;
+}
+
+
+
+/* Adjust widths for various breakpoints  */
+
+@media (min-width: 900px)
+{
+    .vfb-horizontal label.vfb-tick {
+        width: 32%;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 900px)
+{
+    .vfb-horizontal label.vfb-tick {
+        width: 48%;
+    }
+}
+
+@media (max-width: 600px)
+{
+
+    .vfb-horizontal label.vfb-tick {
+        width: 100%;
+        margin: 5px 0;
+    }
+}
+
+input.vfb-hidden-tick {
+    display:none;
+    /*position: fixed;
+    left: -1000px;*/
+}
+
+label.vfb-tick {
+    /*padding-top: 17.5px;*/
+    display: flex;
+    -ms-flex-direction: row;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+
+    align-items: center;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    cursor: pointer;
+    min-height: 65px;
+    line-height: 2.0;
+    border-color: lightgray;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    padding-left: 10px;
+    -moz-transition-property: background-image, border, color, box-shadow;
+    -o-transition-property: background-image, border, color, box-shadow;
+    -webkit-transition-property: background-image, border, color, box-shadow;
+    transition-property: background-image, border, color, box-shadow;
+    -moz-transition-duration: .25s;
+    -o-transition-duration: .25s;
+    -webkit-transition-duration: .25s;
+    transition-duration: .25s;
+    -moz-transition-timing-function: ease-out;
+    -o-transition-timing-function: ease-out;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
+
+/* Font Sizing For Desktops and Tablets */
+@media only screen and (min-width: 600px) {
+   
+    label.vfb-tick {
+        font-size: 1.15em;
+        line-height: 1.6;
+    }
+}
+
+/* Styling for checked checkbox/radio pieces */
+.tick-text {
+    line-height: initial;
+    margin-right: 5px;
+    font-size: 18px;
+    flex-shrink: 999;
+}
+
+.vfb-tick.glyphicon-ok {
+     position: unset; 
+     top: unset; 
+     display: unset; 
+     line-height: unset; 
+}
+
+span.vfb-check-box {
+	height: 30px;
+    padding: 0;
+    width: 30px;
+    background-color: #ffffff;
+    text-align: center;
+    margin-right: 5px;
+    border: 2px solid #e0e0e0;
+    -moz-transition-property: border-color, border-radius;
+    -o-transition-property: border-color, border-radius;
+    -webkit-transition-property: border-color, border-radius;
+    transition-property: border-color, border-radius;
+    -moz-transition-duration: .25s;
+    -o-transition-duration: .25s;
+    -webkit-transition-duration: .25s;
+    transition-duration: .25s;
+    -moz-transition-timing-function: ease-out;
+    -o-transition-timing-function: ease-out;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
+span.vfb-radio-circle {
+	height: 30px;
+    padding: 0;
+    width: 30px;
+    background-color: #ffffff;
+    text-align: center;
+    margin-right: 5px;
+    border: 2px solid #cccccc;
+    border-radius: 50%;
+    -moz-transition-property: border-color, border-radius;
+    -o-transition-property: border-color, border-radius;
+    -webkit-transition-property: border-color, border-radius;
+    transition-property: border-color, border-radius;
+    -moz-transition-duration: .25s;
+    -o-transition-duration: .25s;
+    -webkit-transition-duration: .25s;
+    transition-duration: .25s;
+    -moz-transition-timing-function: ease-out;
+    -o-transition-timing-function: ease-out;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
+span.vfb-tick.radio-circle-selected {
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background-color: transparent;
+	display: block;
+	margin: auto;
+	margin-top: 3px;
+}
+
+/*Checked button styles for labels and check-box/radio-circle*/
+
+input.vfb-hidden-tick:checked + label.vfb-tick {
+    background-color: #cfdfb9;
+    -moz-box-shadow: inset 0 0 3px 1px rgba(0,0,0,.5);
+    -webkit-box-shadow: inset 0 0 3px 1px rgba(0,0,0,.5);
+    box-shadow: inset 0 0 3px 1px rgba(0,0,0,.5);
+    color: #333333;
+}
+
+input.vfb-hidden-tick:checked + label.vfb-tick > span.vfb-check-box {
+        border-color: #cccccc;
+        -moz-box-shadow: inset 0 0 1px 1px rgba(0,0,0,.5);
+        -webkit-box-shadow: inset 0 0 1px 1px rgba(0,0,0,.5);
+        box-shadow: inset 0 0 1px 1px rgba(0,0,0,.5);
+        -moz-border-radius: 2.5px;
+        -webkit-border-radius: 2.5px;
+        border-radius: 2.5px;
+}
+
+input.vfb-hidden-tick:checked + label.vfb-tick > span.vfb-radio-circle {
+		border-color: #cccccc;
+        -moz-box-shadow: inset 0 0 1px 1px rgba(0,0,0,.5);
+        -webkit-box-shadow: inset 0 0 1px 1px rgba(0,0,0,.5);
+        box-shadow: inset 0 0 1px 1px rgba(0,0,0,.5);
+}
+
+input.vfb-hidden-tick:checked + label.vfb-tick > span.vfb-check-box > span.vfb-tick.glyphicon-ok {
+    color: #799c4b;
+}
+
+input.vfb-hidden-tick:checked + label.vfb-tick > span.vfb-radio-circle > span.vfb-tick.radio-circle-selected {
+    background-color: #799c4b;
+}
+
+/*Hover Button Styles*/
+
+label.vfb-tick:hover {
+    background-color: #e4e4e4;
+    color: #333333;
+}
+
+label.vfb-tick:hover > span.vfb-check-box,
+label.vfb-tick:hover > span.vfb-radio-circle {
+  border: 2px solid #333333;
+}
+
+
+/* Glyph styles for hover and click */
+span.vfb-check-box > span.vfb-tick {
+    /* Init color to transparent */
+    color: transparent;
+    -moz-transition-property: color;
+    -o-transition-property: color;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -moz-transition-duration: .25s;
+    -o-transition-duration: .25s;
+    -webkit-transition-duration: .25s;
+    transition-duration: .25s;
+    -moz-transition-timing-function: ease-out;
+    -o-transition-timing-function: ease-out;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
+
+label.vfb-tick:hover > span.vfb-check-box > span.vfb-tick {
+    color: #333333;
+}
+
+label.vfb-tick:hover > span.vfb-radio-circle > span.radio-circle-selected {
+    background-color: #333333;
+}

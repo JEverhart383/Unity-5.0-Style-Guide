@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<!-- Latest compiled and minified CSS -->
+<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
+
+<!-- Optional theme -->
+<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous"> -->
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->
+<!-- Latest compiled and minified JavaScript -->
+<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> -->
+
+	<!-- <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet"> -->
+	<!-- <link rel="stylesheet" type="text/css" href="vfb-styleguide.css"> -->
+	<style type="text/css">
+	body {
+		position:relative;
+		padding-top: 70px;
+	}
+
+/*	.row {
+		margin-top: 100px;	
+		margin-bottom: 100px;
+	}*/
+
+	.color-palette {
+		list-style-type: none; 
+		display: inline-block;
+	}
+
+	.color-palette li {
+	height: 50px; 
+	font-size: 22px;
+	}
+
+	.color-blocks {
+		list-style-type: none; 
+		width: 100%;
+	}
+
+	.color-blocks li {
+		min-width: 100px; 
+		min-height: 100px; 
+		display: inline-block;
+	}
+
+	.vfb-alert {
+		height: 30px;
+		width: 200px;
+	}
+
+	.alert-row, 
+	.alert-row div {
+		display: flex; 
+		flex-direction: row;
+		flex-grow: 1;
+	}
+
+
+	</style>
+</head>
+<body data-spy="scroll" data-target="#navbar-example">
+<div class="navbar navbar-default navbar-fixed-top">
+	<div class="navbar-brand">
+		VFB Style Guide
+	</div>
+	<div id="navbar-example">
+	    <ul class="nav navbar-nav" role="tablist">
+	      <li><a href="#colors">Color Palette</a></li>
+	      <li><a href="#font-styles">Font Styles</a></li>
+	      <li><a href="#buttons">Buttons</a></li>
+	      <li><a href="#cta">CTA</a></li>
+	      <li><a href="#panel">Panel</a></li>
+	      <li><a href="#inputs">Inputs</a></li>
+	      <li><a href="#validation">Validation</a></li>
+	    </ul>
+	 </div>
+</div>  
+<div class="container">
+<div class="row">
+<h1 class="hero-text" id="colors" >Color Palette</h1>
+	<ul class="color-blocks">
+		<li class="vfb-bg-primary">
+		 #8a2432	
+		</li>
+		<li class="vfb-bg-info">
+		 #92b7bc	
+		</li>
+		<li class="vfb-bg-active">
+		 #ffc72a
+		</li>
+		<li class="vfb-bg-secondary">
+		 #799c4b	
+		</li>
+		<li class="vfb-bg-default">
+		 #8d827a
+		</li>
+		<li class="vfb-bg-dark-grey">
+		 #6E655E	
+		</li>	
+		<li class="vfb-bg-body-text vfb-color-background">
+		 #333333	
+		</li>
+		<li class="vfb-bg-off-white">
+		 #e4e4e4	
+		</li>
+		<li class="vfb-bg-cream">
+		 #cfdfb9	
+		</li>
+		<li class="vfb-bg-background">
+		 #ffffff	
+		</li>
+		<li class="vfb-bg-footer">
+		 #cccccc
+		</li>
+		
+	</ul>
+
+	<h2>Color Utility Classes</h2>
+	<p>There are two levels of color utility classes for use on elements. The <code>vfb-color-*</code> class styles font color, while the <code>.vfb-bg-*</code> styles background color. These classes intentionally namespace the VFB color palette so as not to conflict with any Bootstrap defaults.</p>
+	<ul class="color-palette">
+		<li class="vfb-color-primary">
+		.vfb-color-primary | #8a2432	
+		</li>
+		<li class="vfb-color-info">
+		.vfb-color-info | #92b7bc	
+		</li>
+		<li class="vfb-color-active">
+		.vfb-color-active | #ffc72a
+		</li>
+		<li class="vfb-color-secondary">
+		.vfb-color-secondary | #799c4b	
+		</li>
+		<li class="vfb-color-default">
+		.vfb-color-default | #8d827a
+		</li>
+		<li class="vfb-color-dark-grey">
+		.vfb-color-dark-grey | #6E655E	
+		</li>	
+		<li class="vfb-color-body-text">
+		.vfb-color-body-text | #333333	
+		</li>
+		<li class="vfb-color-off-white">
+		.vfb-color-off-white | #e4e4e4	
+		</li>
+		<li class="vfb-color-cream">
+		.vfb-color-cream | #cfdfb9	
+		</li>
+		<li >
+		.vfb-color-background | #ffffff	
+		</li>
+		<li class="vfb-color-footer">
+		.vfb-color-footer | #cccccc
+		</li>
+	</ul>
+	<ul class="color-palette">
+		<li class="vfb-bg-primary">
+		.vfb-bg-primary | #8a2432	
+		</li>
+		<li class="vfb-bg-info">
+		.vfb-bg-info | #92b7bc	
+		</li>
+		<li class="vfb-bg-active">
+		.vfb-bg-active | #ffc72a
+		</li>
+		<li class="vfb-bg-secondary">
+		.vfb-bg-secondary | #799c4b	
+		</li>
+		<li class="vfb-bg-default">
+		.vfb-bg-default | #8d827a
+		</li>
+		<li class="vfb-bg-dark-grey">
+		.vfb-bg-dark-grey | #6E655E		
+		</li>	
+		<li class="vfb-bg-body-text vfb-color-background">
+		.vfb-bg-body-text | #333333	
+		</li>
+		<li class="vfb-bg-off-white">
+		.vfb-bg-off-white | #e4e4e4	
+		</li>
+		<li class="vfb-bg-cream">
+		.vfb-bg-cream | #cfdfb9	
+		</li>
+		<li class="vfb-bg-background">
+		.vfb-bg-background | #ffffff	
+		</li>
+		<li class="vfb-bg-footer">
+		.vfb-bg-footer | #cccccc
+		</li>
+	</ul>
+
+</div>
+
+
+<div class="row">
+	<h1 class="hero-text" id="font-styles"> VFB Font Styles</h1>
+	<h1 class="hero-text heavy" id=""> H1 Example of Lato (900).hero-text.heavy</h1>
+	<h1 class="hero-text" id=""> H1 Example of Lato (600).hero-text</h1>
+	<h1> H1 Example of Lato (600)</h1>
+	<h2> H2 Example of Lato (400)</h2>
+	<h3> H3 Example of Lato (400)</h3>
+	<h3 class="lead"> H3 Example of Lato (400).lead</h3>
+	<h4> H1 Example of Lato (600).hero-text</h4>
+	<p>Regular body text 16px</p>
+	<p class="detail">Detail text .75em</p>
+</div>
+
+<div class="row">
+	<h1 class="hero-text" id="buttons">Buttons</h1>
+	<p>
+	All buttons for VFB extend Bootstrap 3 default's button class and styles. Therefore, you must 
+	apply the <code>.btn</code> base class to any of the button variations below for padding, margin, etc. and to 
+	override vendor default styles.
+	</p>
+	<p>
+	Divs can be styled using all button classes, but active states will only be applied to buttons using the either <code>a</code>, <code>button type="button"</code>, or <code>input type="button"</code> 
+	</p>
+	<p>
+	**Do not use <code> button type="submit"</code> or <code>button</code> without a type, which defaults to submit. DNN does
+	not play well with form submissions.
+	</p>
+</div>
+
+<div class="row">
+<h1>Large Buttons</h1>
+	<h2>Examples of .button-lg using <code>button</code> element</h2>
+	<br>
+	<br>
+	<pre>&lt;button type="button" class=".btn .button-lg .button-primary/secondary/default"&gt;Get a Quote&lt;/button&gt;
+	</pre>
+	<br>
+	<br>
+
+	<div class="col-lg-4">
+	<h3 class="lead">.button-primary</h3>
+	<button type="button" class="btn button-lg button-primary">
+		Get a Quote
+	</button>
+	</div>
+
+	<div class="col-lg-4">
+	<h3 class="lead">.button-secondary</h3>
+	<button type="button" class="btn button-lg button-secondary">
+		Get a Quote
+	</button>
+	</div>
+
+	<div class="col-lg-4">
+	<h3 class="lead">.button-default</h3>
+	<button type="button" class="btn button-lg button-default">
+		Get a Quote
+	</button>
+	</div>
+</div>
+<!-- input element buttons -->
+<div class="row">
+	<h2>Examples of .button-lg using <code>input type="button"</code> element</h2>
+	<p>For <code>input</code> elements, use the value attribute to set the label on the button.</p>
+	<br>
+	<br>
+	<pre>&lt;input type="button" class=".btn .button-lg .button-primary/secondary/default" value="Get a Quote"/&gt;
+	</pre>
+	<br>
+	<br>
+
+	<div class="col-lg-4">
+	<h3 class="lead">.button-primary</h3>
+	<input type="button" class="btn button-lg button-primary" value="Get a Quote">
+	</div>
+
+	<div class="col-lg-4">
+	<h3 class="lead">.button-secondary</h3>
+	<input type="button" class="btn button-lg button-secondary" value="Get a Quote">
+	</div>
+
+	<div class="col-lg-4">
+	<h3 class="lead">.button-default</h3>
+	<input type="button" class="btn button-lg button-default" value="Get a Quote">
+	</div>
+</div>
+<!-- a element buttons -->
+<div class="row">
+	<h2>Examples of .button-lg using <code>a</code> element</h2>
+	<br>
+	<br>
+	<pre>&lt;a href="#" class=".btn .button-lg .button-primary/secondary/default"/&gt;Get a Quote&lt;/a&gt;
+	</pre>
+	<br>
+	<br>
+
+	<div class="col-lg-4">
+	<h3 class="lead">.button-primary</h3>
+	<a href="" class="btn button-lg button-primary">
+		Get a Quote
+	</a>
+	
+	</div>
+
+	<div class="col-lg-4">
+	<h3 class="lead">.button-secondary</h3>
+	<a href="" class="btn button-lg button-secondary">
+		Get a Quote
+	</a>
+	</div>
+
+	<div class="col-lg-4">
+	<h3 class="lead">.button-default</h3>
+	<a href="" class="btn button-lg button-default">
+		Get a Quote
+	</a>
+	</div>
+</div>
+
+<div class="row">
+	<h2>Examples of .button-lg using <code>div</code> element</h2>
+	<br>
+	<br>
+	<pre>&lt;div class=".btn .button-lg .button-primary/secondary/default"/&gt;Get a Quote&lt;/div&gt;
+	</pre>
+	<br>
+	<br>
+
+	<div class="col-lg-4">
+	<h3 class="lead">.button-primary</h3>
+	<div class="btn button-lg button-primary">
+		Get a Quote
+	</div>
+	
+	</div>
+
+	<div class="col-lg-4">
+	<h3 class="lead">.button-secondary</h3>
+	<div class="btn button-lg button-secondary">
+		Get a Quote
+	</div>
+	</div>
+
+	<div class="col-lg-4">
+	<h3 class="lead">.button-default</h3>
+	<div  class="btn button-lg button-default">
+		Get a Quote
+	</div>
+	</div>
+</div>
+
+<!-- 
+
+****
+Begin Small Buttons 
+****
+ -->
+
+<div class="row">
+<h1>Small Buttons</h1>
+	<h2>Examples of .button-sm using <code>button</code> element</h2>
+	<br>
+	<br>
+	<pre>&lt;button type="button" class=".btn .button-sm .button-primary/secondary/default"&gt;Get a Quote&lt;/button&gt;
+	</pre>
+	<br>
+	<br>
+
+	<div class="col-lg-4">
+	<h3 class="lead">.button-primary</h3>
+	<button type="button" class="btn button-sm button-primary">
+		Get a Quote
+	</button>
+	</div>
+
+	<div class="col-lg-4">
+	<h3 class="lead">.button-secondary</h3>
+	<button type="button" class="btn button-sm button-secondary">
+		Get a Quote
+	</button>
+	</div>
+
+	<div class="col-lg-4">
+	<h3 class="lead">.button-default</h3>
+	<button type="button" class="btn button-sm button-default">
+		Get a Quote
+	</button>
+	</div>
+</div>
+<!-- input element buttons -->
+<div class="row">
+	<h2>Examples of .button-sm using <code>input type="button"</code> element</h2>
+	<p>For <code>input</code> elements, use the value attribute to set the label on the button.</p>
+	<br>
+	<br>
+	<pre>&lt;input type="button" class=".btn .button-sm .button-primary/secondary/default" value="Get a Quote"/&gt;
+	</pre>
+	<br>
+	<br>
+
+	<div class="col-lg-4">
+	<h3 class="lead">.button-primary</h3>
+	<input type="button" class="btn button-sm button-primary" value="Get a Quote">
+	</div>
+
+	<div class="col-lg-4">
+	<h3 class="lead">.button-secondary</h3>
+	<input type="button" class="btn button-sm button-secondary" value="Get a Quote">
+	</div>
+
+	<div class="col-lg-4">
+	<h3 class="lead">.button-default</h3>
+	<input type="button" class="btn button-sm button-default" value="Get a Quote">
+	</div>
+</div>
+<!-- a element buttons -->
+<div class="row">
+	<h2>Examples of .button-sm using <code>a</code> element</h2>
+	<br>
+	<br>
+	<pre>&lt;a href="#" class=".btn .button-sm .button-primary/secondary/default"/&gt;Get a Quote&lt;/a&gt;
+	</pre>
+	<br>
+	<br>
+
+	<div class="col-lg-4">
+	<h3 class="lead">.button-primary</h3>
+	<a href="" class="btn button-sm button-primary">
+		Get a Quote
+	</a>
+	
+	</div>
+
+	<div class="col-lg-4">
+	<h3 class="lead">.button-secondary</h3>
+	<a href="" class="btn button-sm button-secondary">
+		Get a Quote
+	</a>
+	</div>
+
+	<div class="col-lg-4">
+	<h3 class="lead">.button-default</h3>
+	<a href="" class="btn button-sm button-default">
+		Get a Quote
+	</a>
+	</div>
+</div>
+
+<div class="row">
+	<h2>Examples of .button-sm using <code>div</code> element</h2>
+	<br>
+	<br>
+	<pre>&lt;div class=".btn .button-sm .button-primary/secondary/default"/&gt;Get a Quote&lt;/div&gt;
+	</pre>
+	<br>
+	<br>
+
+	<div class="col-lg-4">
+	<h3 class="lead">.button-primary</h3>
+	<div class="btn button-sm button-primary">
+		Get a Quote
+	</div>
+	
+	</div>
+
+	<div class="col-lg-4">
+	<h3 class="lead">.button-secondary</h3>
+	<div class="btn button-sm button-secondary">
+		Get a Quote
+	</div>
+	</div>
+
+	<div class="col-lg-4">
+	<h3 class="lead">.button-default</h3>
+	<div  class="btn button-sm button-default">
+		Get a Quote
+	</div>
+	</div>
+</div>
+	
+<div class="row">
+	<h1>Example of Toggle Buttons</h1>
+	<p>Toggle radio buttons are constructed using a number of other conventions used with buttons elsewhere in the style guide. As with components defined in <a href="#inputs">Input Groups</a>, to avoid using JS to style :checked radio buttons, we use the adjacent sibling selector. Thus, the structure of the markup is very important. For these components, the actual radio inputs themselves are hidden using the <code>.vfb-hidden-tick</code> class and the labels are styled accordingly.</p>
+
+							<div class='vfb-center vfb-toggle-buttons'>
+                                <input type='radio' class='vfb-hidden-tick' id="toggleOption1" name="radio-group"/>
+                                <label class='vfb-toggle-btn btn button-sm' for="toggleOption1">
+                                	<span class='tick-text'>Option 1</span>
+                                </label> 
+                                <input type='radio' class='vfb-hidden-tick' id='toggleOption2' name="radio-group"/>
+                                <label class='vfb-toggle-btn btn button-sm' for='toggleOption2'>
+                                	<span class='tick-text' data-bind='text: value'>Option 2</span>
+                                </label> 
+                            </div>
+                            <br>
+                            <br>
+
+                            <pre>	
+                            &lt;div class='vfb-center vfb-toggle-buttons'&gt;
+                                &lt;input type='radio' class='vfb-hidden-tick' id="toggleOption1" name="radio-group"/&gt;
+                                &lt;label class='vfb-toggle-btn btn button-sm' for="toggleOption1"&gt;
+                                	&lt;span class='tick-text'>Option 1&lt;/span&gt;
+                                &lt;/label&gt;
+                                &lt;input type='radio' class='vfb-hidden-tick' id='toggleOption2' name="radio-group"/&gt;
+                                &lt;label class='vfb-toggle-btn btn button-sm' for='toggleOption2'&gt;
+                                	&lt;span class='tick-text' data-bind='text: value'>Option 2&lt;/span&gt;
+                                &lt;/label> 
+                            &lt;/div>
+                            </pre>
+
+
+</div>	
+</div>
+<!-- End First Container 
+
+	Begin containers for CTA
+ -->
+	<div class="container">
+		<h1 class="hero-text" id="cta">Inline CTAs</h1>
+		<p>All inline CTAs need to be in a <code>div class="container-fluid"</code> and placed in one of the valid
+		full width containers in the skin. Most of the styling is done with color utility classes, and the layouts for text are constructed using the Bootstrap grid.</p>
+		<p>Inputs contained within a respective <code>.vfb-cta-*</code> class will all receive default stylings as a descendant.</p>
+		<br/>
+		<h2>CTA Brief</h2>
+		The CTA Brief component is constructed with a <code>div class="vfb-cta-brief vfb-color-secondary vfb-bg-footer"</code> to contain the grid layout, text, and input. At screen widths less that 768px, the CTA Brief collapses into a 12-col layout. The height of the CTA Brief at widths higher than 768px is 100px but will expand to fit its containing elements as the layout collapses. 
+		<br>
+		<br/>
+
+	</div>
+	<div class="container-fluid vfb-cta-brief vfb-bg-footer vfb-color-secondary">
+		<div class="row">
+			<div class="col-lg-2 col-md-1 col-sm-1"></div>
+			<div class="col-lg-3 col-md-4 col-sm-4">
+				<h2>Get an Auto Quote</h2>
+			</div>
+			<div class="col-lg-2 col-md-3 col-sm-4">
+				<input type="text">
+			</div>
+			<div class="col-lg-2 col-md-2 col-sm-3">
+				<div class="btn button-sm button-primary">Begin your Quote</div>
+			</div>
+			<div class="col-lg-3 col-md-2"></div>
+			
+		</div>
+	</div>
+	<div class="container">
+	<h3 class="lead">CTA Brief Markup</h3>
+		<pre>
+		&lt;div class="container-fluid vfb-cta-brief vfb-bg-footer vfb-color-secondary"&gt;
+			&lt;div class="row"&gt;
+			&lt;div class="col-lg-2 col-md-1 col-sm-1">&lt;/div&gt;
+			&lt;div class="col-lg-3 col-md-4 col-sm-4"&gt;
+				&lt;h2>Get an Auto Quote&lt;/h2&gt;
+			&lt;/div>
+			&lt;div class="col-lg-2 col-md-3 col-sm-4"&gt;
+				&lt;input type="text"&gt;
+			&lt;/div&gt;
+			&lt;div class="col-lg-2 col-md-2 col-sm-3"&gt;
+				&lt;div class="btn button-sm button-primary">Begin your Quote&lt;/div&gt;
+			&lt;/div>
+			&lt;div class="col-lg-3 col-md-2">&lt;/div&gt;
+			
+			&lt;/div&gt;
+		&lt;/div&gt;
+		</pre>
+
+		<h2>CTA Verbose</h2>
+		<p>Similar to the CTA Brief, the CTA Verbose is styled using color utility classes and the layout incorporates a responsive grid. The CTA Verbose component is constructed with a <code>div class="vfb-cta-brief vfb-color-background vfb-bg-info"</code> used to contain the grid and markup. At screen widths below 768px, the CTA Verbose collapses into a 12-col layout.</p>
+		<p>**Note: make sure the image is tagged with the class <code>img-responsive</code> so that it scales appropriately. This layout presupposes a 1:1 aspect ratio on the image. A 4:3 aspect ratio may work as well, but could throw off the balance of the CTA content.</p>
+	</div>
+	<div class="container-fluid vfb-cta-verbose vfb-bg-info vfb-color-background">
+		<div class ="row">
+			<div class="col-lg-3 col-md-2 col-sm-2">
+			</div>
+			<div class="col-lg-2 col-md-3 col-sm-3 col-xs-12">
+				<img class="img-responsive" src="http://placehold.it/200x200">
+			</div>
+			<div class="col-lg-4 col-md-4 col-sm-5 col-xs-12">
+			<h2>Free Ebook</h2>
+			<p>Read our ebook about something great! It's full of this, that, and
+			the other thing. That's right. More other thing than you can even imagine.</p>
+			<input type="text">
+			<br>
+			<br>
+			<div class="btn button-sm button-primary">Download Now</div>
+				
+			</div>
+			<div class="col-lg-3 col-md-3 col-sm-2">
+				
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<h3 class="lead">CTA Verbose Markup</h3>
+		<pre>
+		&lt;div class="container-fluid vfb-cta-verbose vfb-bg-info vfb-color-background"&gt;
+			&lt;div class="row"&gt;
+				&lt;div class="col-lg-3 col-md-2 col-sm-2">&lt;/div&gt;
+				&lt;div class="col-lg-2 col-md-3 col-sm-3 col-xs-12"&gt;
+					&lt;img class="img-responsive" src="http://placehold.it/200x200"&lt;
+				&lt;/div>
+				&lt;div class="col-lg-4 col-md-4 col-sm-5 col-xs-12"&gt;
+					&lt;h2&gt;Free Ebook&lt;/h2&gt;
+					&lt;p&gt;Read our ebook about something great! It's full of this, that, and
+					the other thing. That's right. More other thing than you can even imagine. &lt;/p&gt;
+					&lt;input type="text"&gt;
+					&lt;br&gt;
+					&lt;br&gt;
+					&lt;div class="btn button-sm button-primary">Download Now&lt;/div&gt;
+				&lt;/div>
+				&lt;div class="col-lg-3 col-md-3 col-sm-2">&lt;/div&gt;
+				
+			&lt;/div&gt;
+		&lt;/div&gt;
+		</pre>
+
+
+	</div>
+
+	<div class="container">
+		<h1 class="hero-text" id="panel">Panels/Cards</h1>
+		<p>The panels used on the site will be built off of the Bootstrap <code>panel</code> base class By default, panel width is set to 100%, so the size of the panel will depend on its parent container. While most of the styles are applied with <code>.panel</code>, you will also need to apply the <code>.vfb-panel</code> class to access the custom styles of VFB panels, like padding, margin, box-shadow, etc.</p>		
+
+	<div class="row">
+		<div class="col-lg-4">
+			<div class="panel panel-default vfb-panel">
+				<div class="panel-body">
+					<h2 class="vfb-color-secondary">Panel Example H2</h2>
+					<p>Whether it's auto, home, life, health or business, Virginia Farm Bureau Insurance has you covered.</p>
+					<div class="btn button-sm button-primary">Get a Quote</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-lg-4">
+		<div class="panel panel-default vfb-panel">
+				<div class="panel-body">
+					<h2 class="vfb-color-secondary">Panel Example H2</h2>
+					<p>Whether it's auto, home, life, health or business, Virginia Farm Bureau Insurance has you covered.</p>
+					<div class="btn button-sm button-secondary">Get a Quote</div>
+				</div>
+		</div>
+			
+		</div>
+		<div class="col-lg-4">
+			
+		</div>
+	</div>
+	<h3 class="lead">Panel Markup</h3>
+	<pre>		
+		&lt;div class="panel panel-default vfb-panel"&gt;
+				&lt;div class="panel-body"&gt;
+					&lt;h2 class="vfb-color-secondary"&gt;Panel Example H2&lt;/h2&gt;
+					&lt;p&gt;Whether it's auto, home, life, health or business, Virginia Farm Bureau Insurance has you covered.&lt;/p&gt;
+					&lt;div class="btn button-sm button-primary/secondary"&gt;Get a Quote&lt;/div&gt;
+				&lt;/div&gt;
+		&lt;/div&gt;
+
+	</pre>
+
+	</div>
+
+	<div class="container">
+		<h1 class="hero-text" id="inputs">Input Groups</h1>
+		<p>For both the checkbox and radio input groups, there are a few things to be aware of when implementing these components. To avoid using JS to style elements based on :checked property and to get around the need to override vendor specific styles on input elements, we've used a tricky but well-know front-end dev technique to style labels.</p>
+        <p>First, we hide all of the inputs off-screen and have users interact directly with each input's corresponding label. To hide any input off-screen, you can apply the <code>.vfb-hidden-tick</code> class. Next, you need make sure each combination of input/label has correctly used <code>id</code> and <code>for</code> attributes that tie them together.</p>
+        <h4>Important Notes About Markup Structure</h4>
+        <p>Lastly, to use the <code>:checked</code> property of each input to style its corresponding label without JS, we use the adjacent sibling CSS selector. You can see an example of this below:</p>
+        <pre>
+        	input.vfb-hidden-tick:checked + label.vfb-tick {
+    			/*Styles would go here to modify label when input checked*/
+			}
+        </pre>
+        <p>Therefore, the structure of the actual markup is very important here since the adjacent sibling selector will only look at the element <strong>immediately following</strong> the input. In other words, when creating or dynamically generating these elements, the input needs to come first, followed immediately by its corresponding label. See a simplified example of this markup below:</p>
+        <pre>
+        &lt;input type='checkbox' class='vfb-hidden-tick' id="option1"/&gt;
+                &lt;label class='vfb-tick' for="option1"&gt;&lt;/label&gt; 
+        </pre>
+        <h1>Checkboxes</h1>
+        <p>All checkbox groups are styled using <code>display:flex; flex-direction:row;</code> to space them appropriately.</p>                 
+
+
+                            <div class='vfb-center vfb-horizontal vfb-tick-buttons'>
+
+
+                                <input type='checkbox' class='vfb-hidden-tick' id="option1"/>
+                                <label class='vfb-tick' for="option1">
+                                	<span class='vfb-check-box'>
+                                		<span class='vfb-tick glyphicon glyphicon-ok'></span>
+                                	</span>
+                                	<span class='tick-text'>Option 1</span>
+                                </label> 
+                                <input type='checkbox' class='vfb-hidden-tick' id='option2'/>
+                                <label class='vfb-tick' for='option2'>
+                                	<span class='vfb-check-box'>
+                                		<span class='vfb-tick glyphicon glyphicon-ok'></span>
+                                	</span>
+                                	<span class='tick-text' data-bind='text: value'>Option 2</span>
+                                </label> 
+                                <input type='checkbox' class='vfb-hidden-tick' id='option3'/>
+                                <label class='vfb-tick' for='option3'>
+                                	<span class='vfb-check-box'>
+                                		<span class='vfb-tick glyphicon glyphicon-ok'></span>
+                                	</span>
+                                	<span class='tick-text' data-bind='text: value'>Option 3</span>
+                                </label> 
+                               
+
+
+
+                            </div>                        
+
+
+	</div>
+
+	<div class="container">
+		<h1 id="radio">Radio</h1>
+                            
+
+
+                            <div class='vfb-center vfb-horizontal vfb-tick-buttons'>
+
+
+                                <input type='radio' class='vfb-hidden-tick' id="option4" name='options'/>
+                                <label class='vfb-tick' for='option4'>
+                                	<span class='vfb-radio-circle'>
+                                		<span class='vfb-tick radio-circle-selected'></span>
+                                	</span>
+                                	<span class='tick-text' data-bind='text: value'>Option 1</span>
+                                </label> 
+
+                                <input type='radio' class='vfb-hidden-tick' id="option5" name='options'/>
+                                <label class='vfb-tick' for='option5'>
+                                	<span class='vfb-radio-circle'>
+                                		<span class='vfb-tick radio-circle-selected'></span>
+                                	</span>
+                                	<span class='tick-text' data-bind='text: value'>Option 2</span>
+                                </label> 
+
+                                <input type='radio' class='vfb-hidden-tick' id="option6" name='options'/>
+                                <label class='vfb-tick' for='option6'>
+                                	<span class='vfb-radio-circle'>
+                                		<span class='vfb-tick radio-circle-selected'></span>
+                                	</span>
+                                	<span class='tick-text' data-bind='text: value'>Option 6</span>
+                                </label> 
+                                
+                                
+
+
+
+
+                            </div>                        
+
+
+	</div>
+
+		<div class="container">
+		<h1 class="hero-text" id="validation">Validation & Alerts</h1>
+		<p>This section just documents the colors used for different validation alerts. This sections should be built out in more detail to incorporate the jQuery Validation documentation.</p>
+                            
+            <div class="alert-row">
+	            <div class="vfb-alert vfb-alert-error">
+	            	Error! #ff3333 .vfb-alert-error
+	            </div>  
+	            <div class="vfb-alert vfb-alert-warning">
+	            	Warning! #ffcc00 .vfb-alert-warning
+	            </div>  
+	            <div class="vfb-alert vfb-alert-success">
+	            	Success! #339900 .vfb-alert-success
+	            </div>
+	            <div class="vfb-alert vfb-alert-info">
+	            	Info! #06D1DC .vfb-alert-info
+	            </div>
+            </div> 
+            <br>
+            <br>
+            <br>
+            <p>We can also apply the same validation classes to Bootstrap's default dismissable alert. To create a dismissable alert, you must include the default Bootstrap classes <code>.alert .alert-dismissable</code> to create the alert base. After that, you can apply specific VFB classes to color the alert background and text using <code>.vfb-alert-*</code>.</p>
+            <br>
+            <div class="alert vfb-alert-error alert-dismissable">
+	            <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	            <strong>Error!</strong> Here is an alert using .vfb-alert-error....
+            </div>
+            <br>
+            <br>
+            <div class="alert vfb-alert-warning alert-dismissable">
+	            <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	            <strong>Warning!</strong> Here is an alert .vfb-alert-warning....
+            </div>
+            <br>
+            <br>
+            <div class="alert vfb-alert-success alert-dismissable">
+	            <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	            <strong>Success!</strong> Here is an alert .vfb-alert-success....
+            </div>
+            <br>
+		    <br>
+		    <div class="alert vfb-alert-info alert-dismissable">
+	            <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	            <strong>Info!</strong> Here is an alert .vfb-alert-info....
+            </div>
+            <br>
+		    <br>
+		    <pre>
+		&lt;div class="alert vfb-alert-success/error/warning alert-dismissable"&gt;
+	            &lt;button type="button" class="close" data-dismiss="alert" aria-label="Close"&gt;&lt;span aria-hidden="true"&gt;&times;&lt;/span&gt;&lt;/button&gt;
+	            &lt;strong&gt;Success!&lt;/strong&gt; Here is an alert .vfb-alert-success....
+           	&lt;/div&gt;
+		</pre>
+
+		</div>
+
+		
+		<br>
+		<br>
+		<br>
+
+
+
+</div>
+
+
+</body>
+</html>
+
+
